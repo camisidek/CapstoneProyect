@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ item.name }} - Little Lemon</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Little Lemon</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/menu/">Menu</a></li>
+                    <li><a href="/about/">About</a></li>
+                    <li><a href="/book/">Book</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="item-details">
+            <img src="{{ item.image.url }}" alt="{{ item.name }}">
+            <h2>{{ item.name }}</h2>
+            <p class="price">${{ item.price }}</p>
+            <p>{{ item.description }}</p>
+            <a class="cta-button" href="/menu/">Back to Menu</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Little Lemon. All rights reserved.</p>
+    </footer>
+</body>
+</html>

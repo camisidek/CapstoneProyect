@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Little Lemon</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Little Lemon</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/menu/">Menu</a></li>
+                    <li><a href="/about/">About</a></li>
+                    <li><a href="/book/">Book</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Welcome to Little Lemon</h2>
+            <p>Your favorite place for delicious food!</p>
+            <a class="cta-button" href="/menu/">Explore Our Menu</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Little Lemon. All rights reserved.</p>
+    </footer>
+</body>
+</html>
